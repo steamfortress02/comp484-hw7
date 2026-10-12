@@ -16,65 +16,84 @@
 <body>
     <!-- // Intro -->
     <header class="header-section">
-        <img src="images/my-picture.jpg" alt="Mohammed Shariff">
-        <h1>Mohammed Shariff</h1>
-        <h2>Computer Science Student with IT and Frontend development Experience</h2>
-        <p>Confident in resolving complex hardware and software issues across Windows and Linux, 
-        efficiently documenting systems, and working in team environments to resolve technical issues.</p>
+        <div class="content-wrap"> <!-- Added content wrapper -->
+            <img class="profile-img column-narrow" src="images/my-picture.jpg" alt="Mohammed Shariff">
+            <div class="column-wide"> <!-- Added column wrapper -->
+                <h1>Mohammed Shariff</h1>
+                <h2>Computer Science Student with IT and Frontend development Experience</h2>
+                <p>Confident in resolving complex hardware and software issues across Windows and Linux, 
+                efficiently documenting systems, and working in team environments to resolve technical issues.</p>
+            </div> <!-- Closed column wrapper -->
+        </div> <!-- Closed content wrapper -->
     </header>
     
     <main> 
         <!-- // Work Experience -->
         <section class="work-section">
-            <h2>Work Experience</h2>
+            <div class="content-wrap"> <!-- Added content wrapper -->
+                <h2>Work Experience</h2>
 
-            <!-- First Job Details: -->
-            <h3>Frontend Developer & UX Designer</h3>
-            <p>Syncore</p>
-            <p>May 2025 - July 2025</p>
-            <p>Designed and implemented front-end components using React.js while managing legacy functionality.</p>
-            <ul>
-                <li>Assisted in backend improvements including database integration and scheduling tools.</li>
-                <li>Managed GitHub workflows including branching, pull requests, and production deployment.</li>
-            </ul>
+                <!-- First Job Details: -->
+                <div class="column-narrow"> <!-- Added column wrapper -->
+                    <h3>Frontend Developer & UX Designer</h3>
+                    <p>Syncore</p>
+                    <p>May 2025 - July 2025</p>
+                </div> <!-- Closed column wrapper -->
 
-            <!-- Second Job Details -->
-            <h3>IT Intern</h3>
-            <p>SAIL (Society for AI Literacy)</p>
-            <p>May 2025 - July 2025</p>
-            <p>Collaborated on AI-powered tools and web-based systems in a remote team environment.</p>
-            <ul>
-                <li>Gained hands-on experience in troubleshooting and assisting with system deployments.</li>
-                <li>Engaged in technical knowledge sharing and contributed to codebase.</li>
-            </ul>
-            
+                <div class="column-wide"> <!-- Added column wrapper -->
+                    <p>Designed and implemented front-end components using React.js while managing legacy functionality.</p>
+                    <ul>
+                        <li>Assisted in backend improvements including database integration and scheduling tools.</li>
+                        <li>Managed GitHub workflows including branching, pull requests, and production deployment.</li>
+                    </ul>
+                </div> <!-- Closed column wrapper -->
+
+                <!-- Second Job Details -->
+                <div class="column-narrow"> <!-- Added column wrapper -->
+                    <h3>IT Intern</h3>
+                    <p>SAIL (Society for AI Literacy)</p>
+                    <p>May 2025 - July 2025</p>
+                </div> <!-- Closed column wrapper -->
+
+                <div class="column-wide"> <!-- Added column wrapper -->
+                    <p>Collaborated on AI-powered tools and web-based systems in a remote team environment.</p>
+                    <ul>
+                        <li>Gained hands-on experience in troubleshooting and assisting with system deployments.</li>
+                        <li>Engaged in technical knowledge sharing and contributed to codebase.</li>
+                    </ul>
+                </div> <!-- Closed column wrapper -->
+            </div> <!-- Modified: Closed content wrapper -->
         </section>
 
         <!-- // Education -->
         <section class="education-section">
-            <h2>Education</h2>
+            <div class="content-wrap"> <!-- Added content wrapper -->
+                <h2>Education</h2>
 
-            <!-- School details: -->
-            <h3>California State University, Northridge, May 2021-Present</h3>
-            <p>B.S. Computer Science</p>
-            <p>Relevant Coursework: Software Engineering, Operating Systems, Network Security,
-            Algorithm Design, Advanced Data Structures, Object Oriented Programming, Embedded Systems,
-            Assembly Language, Trustworthy AI.</p>
+                <!-- School details: -->
+                <h3>California State University, Northridge, May 2021-Present</h3>
+                <p>B.S. Computer Science</p>
+                <p>Relevant Coursework: Software Engineering, Operating Systems, Network Security,
+                Algorithm Design, Advanced Data Structures, Object Oriented Programming, Embedded Systems,
+                Assembly Language, Trustworthy AI.</p>
+            </div> <!-- Closed content wrapper -->
         </section>
     </main>
     
     <!-- // Footer & contact info -->
     <footer class="footer-section">
-        <h2>Let's Keep in Touch!</h2>
+        <div class="content-wrap"> <!-- Added content wrapper -->
+            <h2>Let's Keep in Touch!</h2>
         
-        <div>
-            <a href="mailto:nadeem.wii@gmail.com">nadeem.wii@gmail.com</a>
-            <a href="https://github.com/steamfortress02" target="_blank">Github</a>
-            <a href="https://www.linkedin.com/in/mohammed-shariff-a15a00356/" target="_blank">LinkedIn</a>
-            <a href="https://www.instagram.com/muwk/" target="_blank">Instagram</a>
-        </div>
+            <div class="contact-info"> <!-- Added contact-info class -->
+                <a href="mailto:nadeem.wii@gmail.com">nadeem.wii@gmail.com</a>
+                <a href="https://github.com/steamfortress02" target="_blank">Github</a>
+                <a href="https://www.linkedin.com/in/mohammed-shariff-a15a00356/" target="_blank">LinkedIn</a>
+                <a href="https://www.instagram.com/muwk/" target="_blank">Instagram</a>
+            </div>
 
-        <p>Copyright 2026 by Mohammed Shariff</p>
+            <p>Copyright 2026 by Mohammed Shariff</p>
+        </div> <!-- Closed content wrapper -->
     </footer>
 </body>
 </html>

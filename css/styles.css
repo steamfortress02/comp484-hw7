@@ -7,12 +7,44 @@
 
 /* Global styles 
 ------------------------------------*/
+
+* { /* Added the universal box model fix snippet */
+    box-sizing: border-box; 
+}
+
 body {
     background-color: #f4f4f9;
     font-family: 'Open Sans', sans-serif;
     color: #333333;
-    margin: 0;
+    margin: 0; /* Ensures no white space around page edges */
     padding: 0;
+}
+
+.content-wrap { /* Added the content-wrap selector globally */
+    max-width: 950px; 
+    margin: 0 auto;
+    padding: 50px;
+    overflow: hidden; 
+}
+
+.column-narrow { /* Added the column-narrow reusable style */
+    width: 30%;
+    float: left;
+    padding-right: 3%;
+    min-height: 175px;
+}
+
+.column-wide { /* Added the column-wide reusable style */
+    width: 70%;
+    float: left;
+    min-height: 225px;
+}
+
+.profile-img { /* Added image styling. Width, float, and margin commented out per step 6f */
+    /* width: 300px; */ 
+    /* float: left; */
+    /* margin-right: 30px; */
+    border-radius: 50%;
 }
 
 h1, h2, h3 {
@@ -27,6 +59,7 @@ h1 {
 h2 {
     font-size: 2em;
     font-weight: 700;
+    margin-top: 0; /* Removed margin-top to normalize padding */
 }
 
 p, li, a {
@@ -41,7 +74,11 @@ p, li, a {
     background-color: #2c3e50;
     color: #ffffff;
     padding: 50px 20px;
-    text-align: center;
+    text-align: center; /* Ensures the content is centered */
+}
+
+header h1, header h2 { /* Removed margins specifically from h1 & h2 inside the header */
+    margin: 0;
 }
 
 .header-section p, .footer-section p, .footer-section a {
@@ -51,6 +88,11 @@ p, li, a {
 .footer-section a {
     margin: 0 10px;
     text-decoration: none;
+}
+
+.contact-info a { /* Added padding and inline-block display for footer links */
+    padding: 10px;
+    display: inline-block;
 }
 
 /* Work Experience
